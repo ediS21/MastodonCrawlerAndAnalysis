@@ -26,7 +26,7 @@ In order to analyze the data, Python and a variety of libraries are used:
 - NetworKIT used for the centrality analysis.
 - NetworkX used for community and clique analysis.
 
-To install these libraries, navigate to the Python sub-folder located within the data analysis folder and input the following command into the terminal, replacing `` with the desired library:
+To install these libraries, navigate to the Python sub-folder located within the data analysis folder and input the following command into the terminal, replacing `<library_name>` with the desired library:
 
 ```
 pip install <library_name>

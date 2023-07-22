@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "b9YxP+yM6Rek6Kpab/uXKisnHPia42CcJd3C9GTO1/LTNjxKDgBvtiakbJKdLar6Vg/X9a/0kO7p9ProNYdkmg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\edisa\\Desktop\\MastodonRetrieveID_Cloud\\MastodonRetrieveID_Cloud.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\edisa\\.nuget\\packages\\mastonet\\2.3.1\\mastonet.2.3.1.nupkg.sha512",
+    "C:\\Users\\edisa\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

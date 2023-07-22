@@ -1,0 +1,17 @@
+C:\Users\edisa\Desktop\MastodonID\MastodonID\bin\Debug\net7.0\MastodonID.exe
+C:\Users\edisa\Desktop\MastodonID\MastodonID\bin\Debug\net7.0\MastodonID.deps.json
+C:\Users\edisa\Desktop\MastodonID\MastodonID\bin\Debug\net7.0\MastodonID.runtimeconfig.json
+C:\Users\edisa\Desktop\MastodonID\MastodonID\bin\Debug\net7.0\MastodonID.dll
+C:\Users\edisa\Desktop\MastodonID\MastodonID\bin\Debug\net7.0\MastodonID.pdb
+C:\Users\edisa\Desktop\MastodonID\MastodonID\obj\Debug\net7.0\MastodonID.csproj.AssemblyReference.cache
+C:\Users\edisa\Desktop\MastodonID\MastodonID\obj\Debug\net7.0\MastodonID.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\edisa\Desktop\MastodonID\MastodonID\obj\Debug\net7.0\MastodonID.AssemblyInfoInputs.cache
+C:\Users\edisa\Desktop\MastodonID\MastodonID\obj\Debug\net7.0\MastodonID.AssemblyInfo.cs
+C:\Users\edisa\Desktop\MastodonID\MastodonID\obj\Debug\net7.0\MastodonID.csproj.CoreCompileInputs.cache
+C:\Users\edisa\Desktop\MastodonID\MastodonID\obj\Debug\net7.0\MastodonID.dll
+C:\Users\edisa\Desktop\MastodonID\MastodonID\obj\Debug\net7.0\refint\MastodonID.dll
+C:\Users\edisa\Desktop\MastodonID\MastodonID\obj\Debug\net7.0\MastodonID.pdb
+C:\Users\edisa\Desktop\MastodonID\MastodonID\obj\Debug\net7.0\MastodonID.genruntimeconfig.cache
+C:\Users\edisa\Desktop\MastodonID\MastodonID\obj\Debug\net7.0\ref\MastodonID.dll
+C:\Users\edisa\Desktop\MastodonID\MastodonID\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\edisa\Desktop\MastodonID\MastodonID\obj\Debug\net7.0\MastodonID.csproj.CopyComplete

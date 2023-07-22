@@ -1,0 +1,22 @@
+Rank: 1: ID: 13179	Degree Centrality: 0.07865267947421638
+Rank: 2: ID: 2500	Degree Centrality: 0.07108190091001011
+Rank: 3: ID: 7343	Degree Centrality: 0.043945904954499494
+Rank: 4: ID: 6405	Degree Centrality: 0.024519716885743174
+Rank: 5: ID: 7138	Degree Centrality: 0.022585945399393327
+Rank: 6: ID: 7273	Degree Centrality: 0.020374115267947423
+Rank: 7: ID: 7326	Degree Centrality: 0.019969666329625886
+Rank: 8: ID: 7298	Degree Centrality: 0.018061172901921132
+Rank: 9: ID: 7668	Degree Centrality: 0.016266430738119314
+Rank: 10: ID: 5897	Degree Centrality: 0.015609201213346816
+Rank: 11: ID: 7899	Degree Centrality: 0.015015166835187058
+Rank: 12: ID: 3427	Degree Centrality: 0.014433771486349849
+Rank: 13: ID: 5314	Degree Centrality: 0.01435793731041456
+Rank: 14: ID: 639	Degree Centrality: 0.014016683518705764
+Rank: 15: ID: 2927	Degree Centrality: 0.013650151668351871
+Rank: 16: ID: 7274	Degree Centrality: 0.013056117290192114
+Rank: 17: ID: 4554	Degree Centrality: 0.013018200202224469
+Rank: 18: ID: 7201	Degree Centrality: 0.012879170879676442
+Rank: 19: ID: 6827	Degree Centrality: 0.012651668351870576
+Rank: 20: ID: 7253	Degree Centrality: 0.012537917087967644
+
+in degreeF1: 13179 1st  ---  2500 6th ---- 7343 12th

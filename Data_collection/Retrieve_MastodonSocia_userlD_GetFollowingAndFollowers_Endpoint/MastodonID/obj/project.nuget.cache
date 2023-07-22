@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "S10ta9obHZq9/KhChVQ8dyfRV41qnuNMjXUQ0/2IFKPeMHgTVP56hg7W/RrHRV9kcKo0kchL30WycMcqy7umJw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\edisa\\Desktop\\MastodonSocial1\\MastodonID\\MastodonID.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\edisa\\.nuget\\packages\\mastonet\\2.3.1\\mastonet.2.3.1.nupkg.sha512",
+    "C:\\Users\\edisa\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,10 +1,10 @@
 # Mastodon Data Crawler And Analysis
 
-This repository contains the codebase for the data collection and analysis methodologies employed in my Bachelor's Thesis, focused on instance network analysis of Mastodon.
+This repository contains the codebase for the data collection and analysis methodologies used in my Bachelor's Thesis, focused on instance network analysis of Mastodon.
 
 # Collecting Data
 
-The data collection process uses the C# programming language, with the Mastonet library fascilitating access the Mastodon API. It's important to remember to incorporate this package into your DOTNET environment prior to executing the code.
+The data collection process uses the C# programming language, with the Mastonet library facilitating access the Mastodon API. It's important to remember to incorporate this package into your DOTNET environment prior to executing the code.
 
 To install the Mastonet package into your DOTNET environment, navigate to the particular C# folder you'd like to run and input the subsequent command into the terminal:
 

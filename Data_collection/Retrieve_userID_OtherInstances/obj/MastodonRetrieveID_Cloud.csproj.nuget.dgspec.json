@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\edisa\\Desktop\\MastodonRetrieveID_Cloud\\MastodonRetrieveID_Cloud.csproj": {}
+    "C:\\Users\\edisa\\Desktop\\Desktop stuff\\RUG Courses\\BSc Thesis\\BSC Thesis codebase\\MastodonCrawlerAndAnalysis\\Data_collection\\Retrieve_userID_OtherInstances\\MastodonRetrieveID_Cloud.csproj": {}
   },
   "projects": {
-    "C:\\Users\\edisa\\Desktop\\MastodonRetrieveID_Cloud\\MastodonRetrieveID_Cloud.csproj": {
+    "C:\\Users\\edisa\\Desktop\\Desktop stuff\\RUG Courses\\BSc Thesis\\BSC Thesis codebase\\MastodonCrawlerAndAnalysis\\Data_collection\\Retrieve_userID_OtherInstances\\MastodonRetrieveID_Cloud.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\edisa\\Desktop\\MastodonRetrieveID_Cloud\\MastodonRetrieveID_Cloud.csproj",
+        "projectUniqueName": "C:\\Users\\edisa\\Desktop\\Desktop stuff\\RUG Courses\\BSc Thesis\\BSC Thesis codebase\\MastodonCrawlerAndAnalysis\\Data_collection\\Retrieve_userID_OtherInstances\\MastodonRetrieveID_Cloud.csproj",
         "projectName": "MastodonRetrieveID_Cloud",
-        "projectPath": "C:\\Users\\edisa\\Desktop\\MastodonRetrieveID_Cloud\\MastodonRetrieveID_Cloud.csproj",
+        "projectPath": "C:\\Users\\edisa\\Desktop\\Desktop stuff\\RUG Courses\\BSc Thesis\\BSC Thesis codebase\\MastodonCrawlerAndAnalysis\\Data_collection\\Retrieve_userID_OtherInstances\\MastodonRetrieveID_Cloud.csproj",
         "packagesPath": "C:\\Users\\edisa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\edisa\\Desktop\\MastodonRetrieveID_Cloud\\obj\\",
+        "outputPath": "C:\\Users\\edisa\\Desktop\\Desktop stuff\\RUG Courses\\BSc Thesis\\BSC Thesis codebase\\MastodonCrawlerAndAnalysis\\Data_collection\\Retrieve_userID_OtherInstances\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -16,12 +16,12 @@ namespace MastodonID
     {
         static async Task Main(string[] args)
         {
-            string filePath = "MWorld-8k-id.txt";
-            string instance = "mastodon.world";
+            string filePath = "MastodonITALY_id.txt";
+            string instance = "mastodon.uno";
 
-            var clientKey = "MCZpzflb1e7ZjivHctMxHogzbnfKAsJ2DrQ6UPqhFY0";
-            var clientSecret = "S-nmdSINjFqoXuaRihgxozpA4hBM5ms_czS5SvvsT_8";
-            var accessToken = "ePoF4AOYfYyWZlfuwp6aHO6LLD66YqUpnFKUG-bHrV4";
+            var clientKey = "akV9tUUNjd9jav6e26YtmeSFb3ReH34_woHFD3c74sY";
+            var clientSecret = "bSIuq43GOOi0PjdnhsWhkDWrr5ucZZnTpWmPrjOkw14";
+            var accessToken = "LmvVFlTMfmUGnMbiJwbcn8XgZsUoZt3FHfgnJNt8SGI";
 
             var appRegistration = new AppRegistration
             {
@@ -57,7 +57,7 @@ namespace MastodonID
             /*
             Get all account information from an account
             */
-            using (var file = new StreamWriter("MWorld-8k-data.txt"))
+            using (var file = new StreamWriter("MastodonITALY-data.txt"))
             {
                 file.WriteLine($"Nr of users from {instance} is {userIDs.Count()}");
                 foreach (var userId in userIDs)
@@ -69,7 +69,7 @@ namespace MastodonID
                     Console.WriteLine($"Reached {counter} users");
                 }
             }
-            Console.WriteLine("User IDs saved to MWorld-8k-data.txt");
+            Console.WriteLine("User IDs saved to MastodonITALY-data.txt");
 
             stopwatch.Stop();
             TimeSpan ts = stopwatch.Elapsed;

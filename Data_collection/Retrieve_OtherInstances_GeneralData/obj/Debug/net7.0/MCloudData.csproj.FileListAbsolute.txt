@@ -16,3 +16,21 @@ C:\Users\edisa\Desktop\MCloudData\obj\Debug\net7.0\ref\MCloudData.dll
 C:\Users\edisa\Desktop\MCloudData\bin\Debug\net7.0\Mastonet.dll
 C:\Users\edisa\Desktop\MCloudData\bin\Debug\net7.0\Newtonsoft.Json.dll
 C:\Users\edisa\Desktop\MCloudData\obj\Debug\net7.0\MCloudData.csproj.CopyComplete
+C:\Users\edisa\Desktop\Desktop stuff\RUG Courses\BSc Thesis\BSC Thesis codebase\MastodonCrawlerAndAnalysis\Data_collection\Retrieve_OtherInstances_GeneralData\bin\Debug\net7.0\MCloudData.exe
+C:\Users\edisa\Desktop\Desktop stuff\RUG Courses\BSc Thesis\BSC Thesis codebase\MastodonCrawlerAndAnalysis\Data_collection\Retrieve_OtherInstances_GeneralData\bin\Debug\net7.0\MCloudData.deps.json
+C:\Users\edisa\Desktop\Desktop stuff\RUG Courses\BSc Thesis\BSC Thesis codebase\MastodonCrawlerAndAnalysis\Data_collection\Retrieve_OtherInstances_GeneralData\bin\Debug\net7.0\MCloudData.runtimeconfig.json
+C:\Users\edisa\Desktop\Desktop stuff\RUG Courses\BSc Thesis\BSC Thesis codebase\MastodonCrawlerAndAnalysis\Data_collection\Retrieve_OtherInstances_GeneralData\bin\Debug\net7.0\MCloudData.dll
+C:\Users\edisa\Desktop\Desktop stuff\RUG Courses\BSc Thesis\BSC Thesis codebase\MastodonCrawlerAndAnalysis\Data_collection\Retrieve_OtherInstances_GeneralData\bin\Debug\net7.0\MCloudData.pdb
+C:\Users\edisa\Desktop\Desktop stuff\RUG Courses\BSc Thesis\BSC Thesis codebase\MastodonCrawlerAndAnalysis\Data_collection\Retrieve_OtherInstances_GeneralData\bin\Debug\net7.0\Mastonet.dll
+C:\Users\edisa\Desktop\Desktop stuff\RUG Courses\BSc Thesis\BSC Thesis codebase\MastodonCrawlerAndAnalysis\Data_collection\Retrieve_OtherInstances_GeneralData\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\edisa\Desktop\Desktop stuff\RUG Courses\BSc Thesis\BSC Thesis codebase\MastodonCrawlerAndAnalysis\Data_collection\Retrieve_OtherInstances_GeneralData\obj\Debug\net7.0\MCloudData.csproj.AssemblyReference.cache
+C:\Users\edisa\Desktop\Desktop stuff\RUG Courses\BSc Thesis\BSC Thesis codebase\MastodonCrawlerAndAnalysis\Data_collection\Retrieve_OtherInstances_GeneralData\obj\Debug\net7.0\MCloudData.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\edisa\Desktop\Desktop stuff\RUG Courses\BSc Thesis\BSC Thesis codebase\MastodonCrawlerAndAnalysis\Data_collection\Retrieve_OtherInstances_GeneralData\obj\Debug\net7.0\MCloudData.AssemblyInfoInputs.cache
+C:\Users\edisa\Desktop\Desktop stuff\RUG Courses\BSc Thesis\BSC Thesis codebase\MastodonCrawlerAndAnalysis\Data_collection\Retrieve_OtherInstances_GeneralData\obj\Debug\net7.0\MCloudData.AssemblyInfo.cs
+C:\Users\edisa\Desktop\Desktop stuff\RUG Courses\BSc Thesis\BSC Thesis codebase\MastodonCrawlerAndAnalysis\Data_collection\Retrieve_OtherInstances_GeneralData\obj\Debug\net7.0\MCloudData.csproj.CoreCompileInputs.cache
+C:\Users\edisa\Desktop\Desktop stuff\RUG Courses\BSc Thesis\BSC Thesis codebase\MastodonCrawlerAndAnalysis\Data_collection\Retrieve_OtherInstances_GeneralData\obj\Debug\net7.0\MCloudData.csproj.CopyComplete
+C:\Users\edisa\Desktop\Desktop stuff\RUG Courses\BSc Thesis\BSC Thesis codebase\MastodonCrawlerAndAnalysis\Data_collection\Retrieve_OtherInstances_GeneralData\obj\Debug\net7.0\MCloudData.dll
+C:\Users\edisa\Desktop\Desktop stuff\RUG Courses\BSc Thesis\BSC Thesis codebase\MastodonCrawlerAndAnalysis\Data_collection\Retrieve_OtherInstances_GeneralData\obj\Debug\net7.0\refint\MCloudData.dll
+C:\Users\edisa\Desktop\Desktop stuff\RUG Courses\BSc Thesis\BSC Thesis codebase\MastodonCrawlerAndAnalysis\Data_collection\Retrieve_OtherInstances_GeneralData\obj\Debug\net7.0\MCloudData.pdb
+C:\Users\edisa\Desktop\Desktop stuff\RUG Courses\BSc Thesis\BSC Thesis codebase\MastodonCrawlerAndAnalysis\Data_collection\Retrieve_OtherInstances_GeneralData\obj\Debug\net7.0\MCloudData.genruntimeconfig.cache
+C:\Users\edisa\Desktop\Desktop stuff\RUG Courses\BSc Thesis\BSC Thesis codebase\MastodonCrawlerAndAnalysis\Data_collection\Retrieve_OtherInstances_GeneralData\obj\Debug\net7.0\ref\MCloudData.dll

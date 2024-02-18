@@ -7,6 +7,7 @@ using System.Diagnostics;
 using Mastonet;
 using Mastonet.Entities;
 using Newtonsoft.Json;
+using System.Text.Json;
 
 namespace MastodonID
 {
@@ -14,13 +15,13 @@ namespace MastodonID
     {
         static async Task Main(string[] args)
         {   //Input file with user IDs and instance from which the data is retrieved
-            string filePath = "Msocial-21k-part3.txt";
-            string instance = "mastodon.social";
+            string filePath = "MastodonNL-data.txt";
+            string instance = "mastodon.nl";
 
             //Access to Mastodon API via Mastonet
-            var clientKey = "pufCwDMtNt3ZIdcKSys6roB9q83GrVNsQgO55BbIHO4";
-            var clientSecret = "UhDCOn30PsfYypFIHwQvPeF2Ma9HkKotHXGJHz-OudA";
-            var accessToken = "0ve4VlffWJTlfjhHI4cqSiDuB5cAYnURw9UHtlun4pI";
+            var clientKey = "Ln0AUYiIIrEM4gt0ZSZhuCfPYWnJKu6CPLJaSssTOrw";
+            var clientSecret = "hZLt9rtGYPWvqOMuk92g0Yy2jopD8iFC_rYjUSkB6Dc";
+            var accessToken = "trt-7sOKiyvkz_rRC8huQOo4e5GNrfG7jB9dLzyTVc4";
 
             var appRegistration = new AppRegistration
             {
@@ -48,9 +49,27 @@ namespace MastodonID
             using (StreamReader reader = new StreamReader(filePath)){
                 string line;
                 
-                while ((line = reader.ReadLine()) != null){
-                    long userID = long.Parse(line);
-                    userIDs.Add(userID);
+                while ((line = reader.ReadLine()) != null)
+                {
+                    // Parse the JSON line and extract the "id" field
+                    var idTokenIndex = line.IndexOf("\"id\":\"");
+                    if (idTokenIndex != -1)
+                    {
+                        idTokenIndex += 6; // Move to the end of the "id":" part
+                        var endIndex = line.IndexOf("\"", idTokenIndex);
+                        if (endIndex != -1)
+                        {
+                            var idString = line.Substring(idTokenIndex, endIndex - idTokenIndex);
+                            if (long.TryParse(idString, out long userID))
+                            {
+                                userIDs.Add(userID);
+                            }
+                            else
+                            {
+                                Console.WriteLine($"Failed to parse user ID: {idString}");
+                            }
+                        }
+                    }
                 }
             }
 
@@ -58,7 +77,7 @@ namespace MastodonID
             int followerCounter = 0;
 
             //Main function to retrieve data and write it in an output file
-            using (var file = new StreamWriter("Following-data-1-3-remaining.txt"))
+            using (var file = new StreamWriter("FollowingNL.json"))
             {
                 file.WriteLine($"Nr of users from {instance} is {userIDs.Count()}");
                 foreach (var userId in userIDs)
@@ -67,14 +86,14 @@ namespace MastodonID
                     var account = await Retry(() => client.GetAccountFollowing(userId.ToString()), TimeSpan.FromSeconds(60), 7);
                     var filteredAccounts = account.Select(a => new { source_id = userId, target_id = a.Id, a.ProfileUrl });
 
-                    if (!filteredAccounts.Any())  // check if the following list is empty
+                    if (!filteredAccounts.Any())
                     {
                         var noFollowEntry = new[] { new { source_id = userId, target_id = (long?)null, ProfileUrl = (string)null } };
-                        file.WriteLine(JsonConvert.SerializeObject(noFollowEntry));
+                        file.WriteLine(System.Text.Json.JsonSerializer.Serialize(noFollowEntry));
                     }
                     else
                     {
-                        var serializedAccount = JsonConvert.SerializeObject(filteredAccounts);
+                        var serializedAccount = System.Text.Json.JsonSerializer.Serialize(filteredAccounts);
                         file.WriteLine(serializedAccount);
                     }
 
@@ -110,7 +129,7 @@ namespace MastodonID
                     Console.WriteLine($"################ Reached {followerCounter} users");
                 }
             }
-            Console.WriteLine("User IDs saved to Following-data-1-3-remaining.txt");
+            Console.WriteLine("User IDs saved to FollowingNL.json");
 
             stopwatch.Stop();
             TimeSpan ts = stopwatch.Elapsed;

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\edisa\\Desktop\\Following1\\Followers1.csproj": {}
+    "C:\\Users\\edisa\\Desktop\\Desktop stuff\\RUG Courses\\BSc Thesis\\BSC Thesis codebase\\MastodonCrawlerAndAnalysis\\Data_collection\\Retrieve_Account_Following\\Followers1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\edisa\\Desktop\\Following1\\Followers1.csproj": {
+    "C:\\Users\\edisa\\Desktop\\Desktop stuff\\RUG Courses\\BSc Thesis\\BSC Thesis codebase\\MastodonCrawlerAndAnalysis\\Data_collection\\Retrieve_Account_Following\\Followers1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\edisa\\Desktop\\Following1\\Followers1.csproj",
+        "projectUniqueName": "C:\\Users\\edisa\\Desktop\\Desktop stuff\\RUG Courses\\BSc Thesis\\BSC Thesis codebase\\MastodonCrawlerAndAnalysis\\Data_collection\\Retrieve_Account_Following\\Followers1.csproj",
         "projectName": "Followers1",
-        "projectPath": "C:\\Users\\edisa\\Desktop\\Following1\\Followers1.csproj",
+        "projectPath": "C:\\Users\\edisa\\Desktop\\Desktop stuff\\RUG Courses\\BSc Thesis\\BSC Thesis codebase\\MastodonCrawlerAndAnalysis\\Data_collection\\Retrieve_Account_Following\\Followers1.csproj",
         "packagesPath": "C:\\Users\\edisa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\edisa\\Desktop\\Following1\\obj\\",
+        "outputPath": "C:\\Users\\edisa\\Desktop\\Desktop stuff\\RUG Courses\\BSc Thesis\\BSC Thesis codebase\\MastodonCrawlerAndAnalysis\\Data_collection\\Retrieve_Account_Following\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -47,6 +47,10 @@
             "Mastonet": {
               "target": "Package",
               "version": "[2.3.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             }
           },
           "imports": [

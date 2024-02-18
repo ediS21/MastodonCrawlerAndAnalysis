@@ -18,11 +18,11 @@ namespace MastodonID
     {
         static async Task Main(string[] args)
         {
-            string instance = "mastodon.online";
+            string instance = "mastodon.uno";
 
-            var clientKey = "E-eLJuqC1ZMBww_HClxA5igWJYkGUXUQChdZP6-H4zw";
-            var clientSecret = "FXCFEr5-fZpH91mERzOvw3iCUo4JnmSl7OQTmDc1H5Q";
-            var accessToken = "5T1a3vDxBIOjF_AdF6svrwvelv93iLs2mJ2HNkZR-hE";
+            var clientKey = "akV9tUUNjd9jav6e26YtmeSFb3ReH34_woHFD3c74sY";
+            var clientSecret = "bSIuq43GOOi0PjdnhsWhkDWrr5ucZZnTpWmPrjOkw14";
+            var accessToken = "LmvVFlTMfmUGnMbiJwbcn8XgZsUoZt3FHfgnJNt8SGI";
 
             var appRegistration = new AppRegistration
             {
@@ -46,41 +46,32 @@ namespace MastodonID
             int offset = 0;
             const int limit = 80;
 
-            TimeSpan targetDuration = TimeSpan.FromHours(8);
+            TimeSpan targetDuration = TimeSpan.FromMinutes(10);
             TimeSpan elapsedDuration;
 
             while (true)
             {
                 try
                 {
-                    var directoryAccounts = await client.GetDirectory(offset, limit, DirectoryOrder.Active, true);
+                    // var directoryAccounts = await client.GetDirectory(offset, limit, DirectoryOrder.Active, true);
+                    var directoryAccounts = await Retry(async () => await client.GetDirectory(offset, limit, DirectoryOrder.Active, true), TimeSpan.FromSeconds(60), 6);
 
-                    foreach (var account in directoryAccounts)
+                    var userTasks = directoryAccounts
+                        .Where(account => !userIDs.Contains(long.Parse(account.Id)))
+                        .Select(account => GetUserDetailsAsync(client, userIDs, instance, account.Id));
+
+                    var userDetails = await Task.WhenAll(userTasks);
+
+                    foreach (var users in userDetails)
                     {
-                        long userId = long.Parse(account.Id);
-
-                        if (!userIDs.Contains(userId))
-                        {
-                            userIDs.Add(userId);
-
-                            var followers = await Retry(() => client.GetAccountFollowers(userId.ToString()), TimeSpan.FromSeconds(60), 7);
-                            var following = await Retry(() => client.GetAccountFollowing(userId.ToString()), TimeSpan.FromSeconds(60), 7);
-
-                            foreach (var user in followers.Concat(following))
-                            {
-                                if (!userIDs.Contains(long.Parse(user.Id)) && user.ProfileUrl.Contains(instance))
-                                {
-                                    userIDs.Add(long.Parse(user.Id));
-                                }
-                            }
-
-                            Console.WriteLine($"Reached {userIDs.Count} users so far");
-
-                            elapsedDuration = stopwatch.Elapsed;
-                            if (elapsedDuration >= targetDuration)
-                                break;
-                        }
+                        userIDs.UnionWith(users);
                     }
+
+                    Console.WriteLine($"Reached {userIDs.Count} users so far");
+
+                    elapsedDuration = stopwatch.Elapsed;
+                    if (elapsedDuration >= targetDuration)
+                        break;
 
                     offset += limit;
 
@@ -101,7 +92,7 @@ namespace MastodonID
             ts.Milliseconds / 10);
             Console.WriteLine("RunTime to gather user IDS is " + elapsedTime);
 
-            using (var file = new StreamWriter("MOnlineID-8hours.txt"))
+            using (var file = new StreamWriter("MastodonITALY2.txt"))
             {
                 file.WriteLine($"Nr of users from {instance} is {userIDs.Count()}");
                 foreach (var userId in userIDs)
@@ -109,7 +100,7 @@ namespace MastodonID
                     file.WriteLine(userId);
                 }
             }
-            Console.WriteLine("User IDs saved to MOnlineID-8hours.txt");
+            Console.WriteLine("User IDs saved to MastodonITALY.txt");
         }
 
         /*
@@ -134,7 +125,6 @@ namespace MastodonID
                         // If "Too many requests" error, wait for a longer time before retrying
                         Console.WriteLine("Too many requests, waiting for 60 seconds before retrying");
                         await Task.Delay(TimeSpan.FromSeconds(60));
-                        continue;
                     }
 
                     if (retries < maxRetries)
@@ -166,6 +156,20 @@ namespace MastodonID
                     }
                 }
             }
+        }
+
+        private static async Task<IEnumerable<long>> GetUserDetailsAsync(MastodonClient client, HashSet<long> userIDs, string instance, string accountId)
+        {
+            var userId = long.Parse(accountId);
+
+            var followers = await Retry(() => client.GetAccountFollowers(accountId), TimeSpan.FromSeconds(60), 7);
+            var following = await Retry(() => client.GetAccountFollowing(accountId), TimeSpan.FromSeconds(60), 7);
+
+            var newUsers = followers.Concat(following)
+                .Where(user => !userIDs.Contains(long.Parse(user.Id)) && user.ProfileUrl.Contains(instance))
+                .Select(user => long.Parse(user.Id));
+
+            return newUsers;
         }
     }
 }

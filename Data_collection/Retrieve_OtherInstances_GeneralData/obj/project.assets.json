@@ -88,11 +88,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\edisa\\Desktop\\MCloudData\\MCloudData.csproj",
+      "projectUniqueName": "C:\\Users\\edisa\\Desktop\\Desktop stuff\\RUG Courses\\BSc Thesis\\BSC Thesis codebase\\MastodonCrawlerAndAnalysis\\Data_collection\\Retrieve_OtherInstances_GeneralData\\MCloudData.csproj",
       "projectName": "MCloudData",
-      "projectPath": "C:\\Users\\edisa\\Desktop\\MCloudData\\MCloudData.csproj",
+      "projectPath": "C:\\Users\\edisa\\Desktop\\Desktop stuff\\RUG Courses\\BSc Thesis\\BSC Thesis codebase\\MastodonCrawlerAndAnalysis\\Data_collection\\Retrieve_OtherInstances_GeneralData\\MCloudData.csproj",
       "packagesPath": "C:\\Users\\edisa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\edisa\\Desktop\\MCloudData\\obj\\",
+      "outputPath": "C:\\Users\\edisa\\Desktop\\Desktop stuff\\RUG Courses\\BSc Thesis\\BSC Thesis codebase\\MastodonCrawlerAndAnalysis\\Data_collection\\Retrieve_OtherInstances_GeneralData\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

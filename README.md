@@ -1,10 +1,10 @@
 # Mastodon Data Crawler And Analysis
 
-This repository contains the codebase for the data collection and analysis methodologies used in my Bachelor's Thesis, focused on instance network analysis of Mastodon.
+This repository contains the codebase for the data collection and analysis methodologies employed in my Bachelor's Thesis, focused on instance network analysis of Mastodon.
 
 # Collecting Data
 
-The data collection process uses the C# programming language, with the Mastonet library facilitating access the Mastodon API. It's important to remember to incorporate this package into your DOTNET environment prior to executing the code.
+The data collection process uses the C# programming language, with the Mastonet library fascilitating access the Mastodon API. It's important to remember to incorporate this package into your DOTNET environment prior to executing the code.
 
 To install the Mastonet package into your DOTNET environment, navigate to the particular C# folder you'd like to run and input the subsequent command into the terminal:
 
@@ -17,7 +17,6 @@ For more detailed instructions on integrating the Mastonet package into DOTNET, 
 For more context or insight into the Mastonet library itself, visit its GitHub page: [GitHub: Mastonet](https://github.com/glacasa/Mastonet)
 
 Before running the code, it's essential to have your personal set of access keys for the specific Mastodon instance you're accessing. You can get these keys by requesting a new application at the following link: https://mastodon.social/settings/applications. This link is specific to mastodon.social; however, the process is the same for other instances. When filling out the application, make sure you name the application and select the read, write, and follow options.
-
 # Analyzing Data
 
 In order to analyze the data, Python and a variety of libraries are used:

@@ -16,6 +16,7 @@ For more detailed instructions on integrating the Mastonet package into DOTNET, 
 
 For more context or insight into the Mastonet library itself, visit its GitHub page: [GitHub: Mastonet](https://github.com/glacasa/Mastonet)
 
+Before running the code, it's essential to have your personal set of access keys for the specific Mastodon instance you're accessing. You can get these keys by requesting a new application at the following link: https://mastodon.social/settings/applications. This link is specific to mastodon.social; however, the process is the same for other instances. When filling out the application, make sure you name the application and select the read, write, and follow options.
 # Analyzing Data
 
 In order to analyze the data, Python and a variety of libraries are used:
@@ -24,7 +25,7 @@ In order to analyze the data, Python and a variety of libraries are used:
 - NetworKIT used for the centrality analysis.
 - NetworkX used for community and clique analysis.
 
-To install these libraries, navigate to the Python sub-folder located within the data analysis folder and input the following command into the terminal, replacing `` with the desired library:
+To install these libraries, navigate to the Python sub-folder located within the data analysis folder and input the following command into the terminal, replacing `<library_name>` with the desired library:
 
 ```
 pip install <library_name>
